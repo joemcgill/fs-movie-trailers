@@ -62,7 +62,7 @@ main_page_content = '''
         <div class="container">
             <button class="close">Close</button>
             <div class="movie-trailer">
-                <img src="http://placehold.it/600x300&text=<%= trailer_youtube_url %>">
+                <iframe class="trailer-video" src='http://www.youtube.com/embed/<%= trailer_youtube_id %>?autoplay=1&html5=1' type="text-html" frameborder="0"></iframe>
             </div>
             <div class="movie-details">
                 <h2 class="movie-heading"><%= title %></h2>
