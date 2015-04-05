@@ -1,0 +1,143 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 80px;
+  background-color: #012333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-card {
+  float: left;
+  overflow: auto;
+  height: 120px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #303030;
+}
+
+.movie-card:hover {
+  background-color: #EEE;
+  cursor: pointer;
+}
+
+.movie-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+
+.movie-meta .movie-rating,
+.movie-meta .movie-release {
+  display: block;
+}
+
+.movie-thumb {
+  float: left;
+  margin-right: .5em;
+  margin-bottom: 1em;
+}
+
+.navbar {
+  background-color: #0078B1;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar a {
+  color: #fff;
+  text-shadow: none;
+}
+
+.navbar-brand {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  font-weight: 200;
+  text-transform: uppercase;
+
+}
+
+.theatre {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #012333;
+  color: #fff;
+  padding-top: 20px;
+}
+
+
+@media screen and (min-width: 400px) {
+  .movie-card {
+    width: calc(50% - 10px);
+  }
+
+  .movie-card:nth-child(2n+0) {
+    margin-right: 0;
+  }
+
+  .movie-card:nth-child(2n+1) {
+    clear: left;
+  }
+
+}
+
+@media screen and (min-width: 780px) {
+  .movie-card {
+    width: calc(33% - 11px);
+  }
+
+  .movie-card:nth-child(2n+0) {
+    margin-right: 20px;
+  }
+
+  .movie-card:nth-child(2n+1) {
+    clear: none;
+  }
+
+  .movie-card:nth-child(3n+0) {
+    margin-right: 0;
+  }
+
+  .movie-card:nth-child(3n+1) {
+    clear: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .movie-card {
+    width: calc(25% - 15px);
+  }
+
+  .movie-card:nth-child(3n+0) {
+    margin-right: 20px;
+  }
+
+  .movie-card:nth-child(3n+1) {
+    clear: none;
+  }
+
+  .movie-card:nth-child(4n+0) {
+    margin-right: 0;
+  }
+
+  .movie-card:nth-child(4n+1) {
+    clear: left;
+  }
+}
