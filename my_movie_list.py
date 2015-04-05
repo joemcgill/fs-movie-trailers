@@ -100,7 +100,7 @@ main_page_content = '''
 
 def open_movies_page( movie_collection ):
     # Create or overwrite the output file
-    output_file = open('movie-list.html', 'w')
+    output_file = open('index.html', 'w')
 
     movies = ''
     for movie in movie_collection:
