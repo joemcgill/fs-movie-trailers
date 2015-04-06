@@ -71,12 +71,11 @@ Movies.MovieDetails = Backbone.View.extend({
   template: _.template( $( '#tmpl-movie-details' ).html() ),
 
   events: {
-    'click .close': 'closeTheater'
+    'click .btn-close': 'closeTheater'
   },
 
 
   render: function() {
-    console.log(this.model.attributes);
     this.$el.append( this.template(this.model.attributes) ).show();
   },
 

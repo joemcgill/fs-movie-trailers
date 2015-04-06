@@ -17,7 +17,7 @@ opening_movies = rt.lists('movies', 'opening')
 movie_collection = []
 for mov in opening_movies['movies']:
     # Find youtube trailer
-    options = youtube_search.Options( mov['title'] + ' trailer', '1' )
+    options = youtube_search.Options( mov['title'] + ' trailer', 1 )
     trailer_id = youtube_search.search(options)
 
     # Convert cast names to a comma separated list

@@ -60,7 +60,7 @@ main_page_content = '''
 
     <script id="tmpl-movie-details" type="text/template">
         <div class="container">
-            <button class="close">Close</button>
+            <button class="btn-close text-hide"><span class="hide-text">Close</span></button>
             <div class="movie-trailer">
                 <iframe class="trailer-video" src='http://www.youtube.com/embed/<%= trailer_youtube_id %>?autoplay=1&html5=1' type="text-html" frameborder="0"></iframe>
             </div>
@@ -70,9 +70,9 @@ main_page_content = '''
                 <div class="meta">
                     <p class="cast"><strong>Cast:</strong> <%= cast %></p>
                     <p>
-                        <span class="movie-rating"><strong>Rating:<strong> <%= rating %></span>
-                        <span class="movie-release"><strong>Release Date:<strong> <%= release_date %></span>
-                        <span class="movie-critic-score"><strong>Critic Score:<strong> <%= critic_score %></span>
+                        <span class="movie-rating"><strong>Rating:</strong> <%= rating %></span>
+                        <span class="movie-release"><strong>Release Date:</strong> <%= release_date %></span>
+                        <span class="movie-critic-score"><strong>Critic Score:</strong> <%= critic_score %></span>
                     </p>
                 </div>
             </div>
@@ -82,10 +82,10 @@ main_page_content = '''
     <!-- / Backbone Templates -->
 
     <!-- Include external JS files -->
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="http://underscorejs.org/underscore-min.js"></script>
-    <script src="http://backbonejs.org/backbone-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
     <script src="js/movies.js"></script>
     <script src="js/script.js"></script>
     <script type="text/javascript">
