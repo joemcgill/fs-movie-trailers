@@ -1,6 +1,9 @@
 Opening Movie Trailers
 ======================
 
+### Udacity Full Stack Web Developer – Project 1
+
+This app is an example of using python to display a list of upcoming movies so users can watch the trailers and read a synopsis of movies that will be opening soon.
 
 ## Requirements
 
